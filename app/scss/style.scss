@@ -1,0 +1,41 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header {
+  padding: 16px;
+
+  &__container {
+    max-width: 1360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding: 7px 11px 7px 33px;
+    border: 1px solid #D6D6D6;
+    border-radius: 50px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  &__item:last-child {
+    padding: 15px 25px;
+    background: #0A151B;
+    border-radius: 50px;
+    .header__link {
+      color: #F6F2E8;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+  }
+}
